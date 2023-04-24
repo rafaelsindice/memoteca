@@ -6,16 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./criar-pensamento.component.css']
 })
 export class CriarPensamentoComponent implements OnInit {
+cancelar() {
+alert("Pensamento cancelado!")
+}
   pensamento = {
     id: '1',
     conteudo: 'Aprendendo Angular',
     autoria: 'Dev',
-    modelo: ''
+    modelo: 'modelo1'
 }
   constructor(){}
 
   ngOnInit(): void {
     throw new Error('Method not implemented.');
+  }
+  CriarPensamento(){
+    alert("Novo pensamento criado!");
+
   }
 
 }
